@@ -5,95 +5,99 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Innokentii-Y CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="header">
-    <nav class="header__menu">
-      <ul>
-        <li>
-          <a href="#about">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#contacts">
-            Contacts
-          </a>
-        </li>
-        <li>
-          <a href="#skills">
-            Skills
-          </a>
-        </li>
-        <li>
-          <a href="#code">
-            Code
-          </a>
-        </li>
-        <li>
-          <a href="#experience">
-            Experience
-          </a>
-        </li>
-        <li>
-          <a href="#education">
-            Education
-          </a>
-        </li>
-        <li>
-          <a href="#language">
-            Language
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="header__menu">
+        <ul class="list header__list">
+          <li>
+            <a href="#name" class="link header__link">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#skills" class="link header__link">
+              Skills
+            </a>
+          </li>
+          <li>
+            <a href="#education" class="link header__link">
+              Education
+            </a>
+          </li>
+          <li>
+            <a href="#code" class="link header__link">
+              Code
+            </a>
+          </li>
+          <li>
+            <a href="#experience" class="link header__link">
+              Experience
+            </a>
+          </li>
+          <li>
+            <a href="#contacts" class="link header__link">
+              Contacts
+            </a>
+          </li>
+          <li>
+            <a href="#language" class="link header__link">
+              Language
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <div class="container">
-      <section class="name">
-        <h1 class="title">Innokentii Yurkovskii</h1>
-        <img src="./assets/img/photo.jpg" alt="My photo">
+      <section class="name" id="name">
+        <div class="name__image-wrapper">
+          <img src="./assets/img/photo.jpg" alt="My photo" class="image">
+        </div>
+        <div class="name__text">
+          <h1 class="title">Innokentii Yurkovskii</h1>
+          <p>
+            I started my way into the frontend completely by accident. In 2021, my friend from the university invited me to work with him, from that moment on I started to immerse myself in html and css from scratch. Worked in cms bitrix, used php and js. Thanks to this start, I was able to join a larger company. At the moment I work for a large company as a frontend developer.
+            <br>
+            Now I plan to develop my practical and theoretical skills.
+          </p>
+        </div>
       </section>
       <section class="about" id="about">
-        <ul class="about__list">
-          <li class="about__item">
-            <h2 class="about__title">About me</h2>
-            <p class="about__text">
-              I started my way into the frontend completely by accident. In 2021, my friend from the university invited me to work with him, from that moment on I started to immerse myself in html and css from scratch. Worked in cms bitrix, used php and js. Thanks to this start, I was able to join a larger company. At the moment I work for a large company as a frontend developer.
-              <br>
-              Now I plan to develop my practical and theoretical skills.
-            </p>
-          </li>
-          <li class="about__item" id="contacts">
-            <h2 class="about__title">Contacts</h2>
-            <p class="about__text">
-              Location: Russia, Moscow
-              <br>
-              Phone: <a href="tel:+79998456768" title="phone">+79998456768</a>
-              <br>
-              Email: <a href="mailto:innokentii.work@gmail.com" title="mail">innokentii.work@gmail.com</a>
-              <br>
-              Telegram: <a href="https://t.me/Innokentiy_Y" title="telegram">@Innokentiy_Y</a>
-            </p>
-          </li>
+        <ul class="list about__list">
           <li class="about__item" id="skills">
             <h2 class="about__title">Skills</h2>
-            <p class="about__text">
+            <ul class="about__text">
+              <li>HTML5, CSS3</li>
+              <li>JavaScript Basics</li>
+              <li>PHP Basics</li>
+              <li>CMS Bitrix</li>
+              <li>Git, GitHub</li>
+              <li>VS Code</li>
+              <li>Adobe Photoshop, Figma</li>
+            </ul>
+          </li>
+          <li class="about__item" id="education">
+            <h2 class="about__title">Education</h2>
+            <div class="about__text">
+              Higher education - Synergy
+              <br>
               <ul>
-                <li>HTML5, CSS3</li>
-                <li>JavaScript Basics</li>
-                <li>PHP Basics</li>
-                <li>CMS Bitrix</li>
-                <li>Git, GitHub</li>
-                <li>VS Code</li>
-                <li>Adobe Photoshop, Figma</li>
+                <li>Frontend-developer yandex practicum (drop)</li>
+                <li>School 42 (drop)</li>
+                <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
               </ul>
-            </p>
+            </div>
           </li>
           <li class="about__item" id="code">
             <h2 class="about__title">Code</h2>
-            <p class="about__text">
+            <p class="about__text about__text_type_code">
               *Its base*
               <br>
               ```javascript
@@ -108,41 +112,38 @@
             <p class="about__text">
               Junior Dev
               <br>
-              <a href="https://innokentii-y.github.io/rsschool-cv/" title="My first project">rsschool first project</a>
+              <a href="https://innokentii-y.github.io/rsschool-cv/" title="My first project" class="link">RS School first project</a>
             </p>
           </li>
-          <li class="about__item" id="education">
-            <h2 class="about__title">Education</h2>
-            <p class="about__text">
-              Higher education - Synergy
-              <br>
-              <ul>
-                <li>Frontend-developer yandex practicum (drop)</li>
-                <li>School 42 (drop)</li>
-                <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
-              </ul>
-            </p>
+          <li class="about__item" id="contacts">
+            <h2 class="about__title">Contacts</h2>
+            <ul class="about__text">
+              <li>Location: Russia, Moscow</li>
+              <li>Phone: <a href="tel:+79998456768" title="phone" class="link">+79998456768</a></li>
+              <li>Email: <a href="mailto:innokentii.work@gmail.com" title="mail" class="link">innokentii.work@gmail.com</a></li>
+              <li>Telegram: <a href="https://t.me/Innokentiy_Y" title="telegram" class="link">@Innokentiy_Y</a></li>
+            </ul>
           </li>
           <li class="about__item" id="language">
             <h2 class="about__title">Language</h2>
-            <p class="about__text">
-              <ul>
-                <li>English - A2</li>
-                <li>Russian - Native</li>
-              </ul>
-            </p>
+            <ul class="about__text">
+              <li>English - A2</li>
+              <li>Russian - Native</li>
+            </ul>
           </li>
         </ul>
       </section>
     </div>
   </main>
   <footer class="footer">
-    <div class="footer__info">
-      © 2024 <a href="https://github.com/Innokentii-Y/" title="github">Innokentii-Y</a>
+    <div class="container footer__wrapper">
+      <div class="footer__info">
+        © 2024 <a href="https://github.com/Innokentii-Y/" title="github" class="link footer__link">Innokentii-Y</a>
+      </div>
+      <a href="https://rs.school/courses/javascript-ru" title="rsschool" class="link footer__image-wrapper">
+        <img src="./assets/img/logo.png" alt="Logo" class="image">
+      </a>
     </div>
-    <a href="https://rs.school/courses/javascript-ru" title="rsschool">
-      <img src="./assets/img/logo.png" alt="Logo">
-    </a>
   </footer>
 </body>
 </html>
